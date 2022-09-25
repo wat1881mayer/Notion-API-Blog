@@ -72,5 +72,5 @@ export const fetchBlocksByPageId = async (pageId: string) => {
     if (!next_cursor) break;
     cursor = next_cursor;
   }
-  return await notion.blocks.children.list({ block_id: pageId });
+  return { result: data };
 };
