@@ -72,5 +72,5 @@ export const fetchBlocksByPageId = async (pageId: string) => {
     if (!next_cursor) break;
     cursor = next_cursor;
   }
-  return { result: data };
+  return { results: data };
 };
